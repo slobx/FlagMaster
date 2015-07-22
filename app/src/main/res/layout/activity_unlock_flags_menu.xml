@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.slobx.www.flagmaster.UnlockFlagsMenuActivity"
+    android:background="@drawable/backgroundmainactivity"
+    >
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/europeButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="right|center_vertical"
+        android:paddingRight="7dp"
+        android:paddingBottom="12dp"
+        android:textColor="#000000"
+        android:clickable="true"
+        android:onClick="startUnlockEuropeFlagsActivity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/asiaButton"
+        android:layout_below="@+id/europeButton"
+        android:layout_centerHorizontal="true"
+        android:gravity="right|center_vertical"
+        android:paddingRight="7dp"
+        android:paddingBottom="12dp"
+        android:textColor="#000000"
+        android:clickable="true"
+        android:onClick="startUnlockAsiaFlagsActivity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/africaButton"
+        android:layout_below="@+id/asiaButton"
+        android:layout_centerHorizontal="true"
+        android:gravity="right|center_vertical"
+        android:paddingRight="7dp"
+        android:paddingBottom="12dp"
+        android:textColor="#000000"
+        android:clickable="true"
+        android:onClick="startUnlockAfricaFlagsActivity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/northAmericaButton"
+        android:layout_below="@+id/africaButton"
+        android:layout_centerHorizontal="true"
+        android:gravity="right|center_vertical"
+        android:paddingRight="7dp"
+        android:paddingBottom="12dp"
+        android:textColor="#000000"
+        android:clickable="true"
+        android:onClick="startUnlockNorthAmericaFlagsActivity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/southAmericaButton"
+        android:layout_below="@+id/northAmericaButton"
+        android:layout_centerHorizontal="true"
+        android:gravity="right|center_vertical"
+        android:paddingRight="7dp"
+        android:paddingBottom="12dp"
+        android:textColor="#000000"
+        android:clickable="true"
+        android:onClick="startUnlockSouthAmericaFlagsActivity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/oceaniaButton"
+        android:layout_below="@+id/southAmericaButton"
+        android:layout_centerHorizontal="true"
+        android:gravity="right|center_vertical"
+        android:paddingRight="7dp"
+        android:paddingBottom="12dp"
+        android:textColor="#000000"
+        android:clickable="true"
+        android:onClick="startUnlockOceaniaActivity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unrecognizedCountriesButton"
+        android:layout_below="@+id/oceaniaButton"
+        android:layout_centerHorizontal="true"
+        android:gravity="right|center_vertical"
+        android:paddingRight="7dp"
+        android:paddingBottom="12dp"
+        android:textColor="#000000"
+        android:clickable="true"
+        android:onClick="startUnlockUnrecognizedCountriesActivity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/othersButton"
+        android:layout_below="@+id/unrecognizedCountriesButton"
+        android:layout_centerHorizontal="true"
+        android:gravity="right|center_vertical"
+        android:paddingRight="7dp"
+        android:paddingBottom="12dp"
+        android:textColor="#000000"
+        android:clickable="true"
+        android:onClick="startUnlockOthersActivity" />
+</RelativeLayout>

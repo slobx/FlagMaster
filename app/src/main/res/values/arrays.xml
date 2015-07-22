@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="continents">
+        <item >Europe</item>
+        <item >Asia</item>
+        <item >Africa</item>
+        <item >North America</item>
+        <item >South America</item>
+        <item >Oceania</item>
+        <item >Unrecognized countries</item>
+        <item >Other territories</item>
+    </string-array>
+    <string-array name="continentsvalues">
+        <item >europe-checked</item>
+        <item >asia-checked</item>
+        <item >africa-checked</item>
+        <item >northamerica-checked</item>
+        <item >southamerica-checked</item>
+        <item >oceania-checked</item>
+        <item >unrecognized-checked</item>
+        <item >others-checked</item>
+    </string-array>
+    <string-array name="continentsdefault">
+        <item >europe-default</item>
+        <item >asia-default</item>
+        <item >africa-default</item>
+        <item >northamerica-default</item>
+        <item >southamerica-default</item>
+        <item >oceania-default</item>
+        <item >unrecognized-default</item>
+        <item >others-default</item>
+    </string-array>
+
+</resources>

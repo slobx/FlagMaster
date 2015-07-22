@@ -1,0 +1,108 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.slobx.www.flagmaster.MainActivity"
+    android:id="@+id/relative"
+    android:background="@drawable/backgroundmainactivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonArcadeGame"
+            android:onClick="startChooseNormalGame"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/menubuttonstartgame"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonUnlockMoreFlags"
+            android:onClick="startUnlockFlagsMenuActivity"
+            android:background="@drawable/menubuttonunlockflags"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonAchievements"
+            android:onClick="startAchievementsActivity"
+            android:background="@drawable/menubuttonachievements"/>
+
+       <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSettings"
+            android:onClick="startSettingsActivity"
+            android:background="@drawable/menubuttonsettings"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonRemoveAds"
+            android:onClick="removeAdsMethod"
+            android:background="@drawable/menubuttonremoveads"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linear">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/starTextView"
+            android:paddingLeft="84dp"
+            android:paddingTop="18dp"
+            android:textColor="#000000"
+            android:background="@drawable/starnumber"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:minLines="2"
+            android:text="Click here to by more stars"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/buyMoreTextView"
+            android:clickable="true"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

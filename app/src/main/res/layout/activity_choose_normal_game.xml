@@ -1,0 +1,67 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.slobx.www.flagmaster.MainActivity"
+    android:id="@+id/relative"
+    android:background="@drawable/backgroundchoosegame">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonArcadeGame"
+            android:onClick="startNormalGameNameFlag"
+            android:background="@drawable/normalgame1"
+            android:layout_marginTop="100dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startNormalGameFlagName"
+            android:id="@+id/startNormalNameGameFlag"
+            android:background="@drawable/normalgame2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonUnlockMoreFlags"
+            android:onClick="startNormalGameFlagCapital"
+            android:background="@drawable/normalgame3"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonAchievements"
+            android:onClick="startNormalGameCapitalFlag"
+            android:background="@drawable/normalgame4"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewChooseMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

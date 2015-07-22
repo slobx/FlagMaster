@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/scorebgbottom1" android:duration="80" />
+    <item android:drawable="@drawable/scorebgbottom2" android:duration="80" />
+    <item android:drawable="@drawable/scorebgbottom3" android:duration="80" />
+    <item android:drawable="@drawable/scorebgbottom4" android:duration="80" />
+    <item android:drawable="@drawable/scorebgbottom5" android:duration="80" />
+    <item android:drawable="@drawable/scorebgbottom6" android:duration="80" />
+    <item android:drawable="@drawable/scorebgbottom7" android:duration="80" />
+    <item android:drawable="@drawable/scorebgbottom8" android:duration="80" />
+    <item android:drawable="@drawable/scorebgbottom9" android:duration="80" />
+    <item android:drawable="@drawable/scorebgbottom10" android:duration="80" />
+    <item android:drawable="@drawable/scorebgbottom11" android:duration="80" />
+    <item android:drawable="@drawable/scorebgbottom12" android:duration="80" />
+    <item android:drawable="@drawable/scorebgbottom13" android:duration="80" />
+    <item android:drawable="@drawable/scorebgbottom14" android:duration="80" />
+
+
+</animation-list>

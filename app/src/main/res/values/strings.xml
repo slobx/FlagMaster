@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Flag Master</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_arcade_game">ArcadeGameActivity</string>
+    <string name="title_activity_unlock_flags">UnlockFlagsActivity</string>
+    <string name="title_activity_unlock_flags_menu">UnlockFlagsMenuActivity</string>
+    <string name="title_activity_unlock_asia_flags">UnlockAsiaFlagsActivity</string>
+    <string name="title_activity_unlock_africa_flags">UnlockAfricaFlagsActivity</string>
+    <string name="title_activity_unlock_north_america_flags">UnlockNorthAmericaFlagsActivity</string>
+    <string name="title_activity_unlock_south_america_flags">UnlockSouthAmericaFlagsActivity</string>
+    <string name="title_activity_unlock_oceania_flags">UnlockOceaniaFlagsActivity</string>
+    <string name="title_activity_unlock_unrecognized_countries">UnlockUnrecognizedCountriesActivity</string>
+    <string name="title_activity_unlock_others">UnlockOthersActivity</string>
+    <string name="title_activity_time_game">TimeGameActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_splash_time_game">SplashTimeGame</string>
+    <string name="title_activity_achievements">AchievementsActivity</string>
+    <string name="title_activity_payment">PaymentActivity</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6023063381636762/6447762137</string>
+    <string name="title_activity_settings">SettingAcitivity</string>
+    <string name="title_activity_choose_normal_game">ChooseNormalGameActivity</string>
+    <string name="title_activity_normal_game_flag_name">NormalGameFlagNameActivity</string>
+
+</resources>

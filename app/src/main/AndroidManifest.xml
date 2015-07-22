@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.slobx.www.flagmaster" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!-- Define your own permission to protect payment broadcast -->
+    <permission
+        android:name="com.slobx.www.flagmaster.PAYMENT_BROADCAST_PERMISSION"
+        android:label="Read payment status"
+        android:protectionLevel="signature" />
+    <!-- "signature" permission granted automatically by system, without notifying user. -->
+    <uses-permission android:name="com.slobx.www.flagmaster.PAYMENT_BROADCAST_PERMISSION" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <!-- Declare these objects, this is part of Fortumo SDK, and should not be called directly -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+        android:screenOrientation="portrait">
+
+        <!-- This meta-data tag is required to use Google Play Services. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".MasterGameActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <activity
+            android:name=".normalgame.NormalGameNameFlagActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="NormalGameNameFlagActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".unlockactivities.UnlockEuropeFlagsActivity"
+            android:label="@string/title_activity_unlock_flags"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".UnlockFlagsMenuActivity"
+            android:label="@string/title_activity_unlock_flags_menu"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".unlockactivities.UnlockAsiaFlagsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_unlock_asia_flags" >
+        </activity>
+        <activity
+            android:name=".unlockactivities.UnlockAfricaFlagsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_unlock_africa_flags" >
+        </activity>
+        <activity
+            android:name=".unlockactivities.UnlockNorthAmericaFlagsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_unlock_north_america_flags" >
+        </activity>
+        <activity
+            android:name=".unlockactivities.UnlockSouthAmericaFlagsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_unlock_south_america_flags" >
+        </activity>
+        <activity
+            android:name=".unlockactivities.UnlockOceaniaFlagsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_unlock_oceania_flags" >
+        </activity>
+        <activity
+            android:name=".unlockactivities.UnlockUnrecognizedCountriesActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_unlock_unrecognized_countries"                                              >
+        </activity>
+        <activity
+            android:name=".unlockactivities.UnlockOthersCountriesActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_unlock_others" >
+        </activity>
+        <activity
+            android:name=".timegame.TimeGameNameFlagActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_time_game"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".timegame.SplashTimeGameNameFlag"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_splash_time_game"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".AchievementsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_achievements" >
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_settings" >
+        </activity>
+
+        <!-- Declare these objects, this is part of Fortumo SDK, and should not be called directly -->
+        <receiver android:name="mp.MpSMSReceiver" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="mp.MpService" />
+        <service android:name="mp.StatusUpdateService" />
+
+        <activity
+            android:name="mp.MpActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name=".PaymentStatusReceiver"
+            android:permission="com.slobx.www.flagmaster.PAYMENT_BROADCAST_PERMISSION" >
+            <intent-filter>
+                <action android:name="mp.info.PAYMENT_STATUS_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".normalgame.ChooseNormalGameActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_choose_normal_game" >
+        </activity>
+        <activity
+            android:name=".ChooseGameActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".timegame.ChooseTimeGameActivity"
+            android:screenOrientation="portrait"
+            android:label="ChooseTimeGameActivity" >
+        </activity>
+        <activity
+            android:name=".normalgame.NormalGameFlagNameActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_normal_game_flag_name" >
+        </activity>
+        <activity
+            android:name=".normalgame.NormalGameFlagCapitalActivity"
+            android:screenOrientation="portrait"
+            android:label="NormalGameFlagCapitalActivity" >
+        </activity>
+        <activity
+            android:name=".normalgame.NormalGameCapitalFlagActivity"
+            android:screenOrientation="portrait"
+            android:label="NormalGameCapitalFlagActivity" >
+        </activity>
+        <activity
+            android:name=".timegame.SplashTimeGameFlagName"
+            android:screenOrientation="portrait"
+            android:label="SplashTimeGameFlagName" >
+        </activity>
+        <activity
+            android:name=".timegame.TimeGameFlagNameActivity"
+            android:screenOrientation="portrait"
+            android:label="TimeGameFlagNameActivity" >
+        </activity>
+        <activity
+            android:name=".timegame.SplashTimeGameFlagCapital"
+            android:screenOrientation="portrait"
+            android:label="SplashTimeGameFlagCapital" >
+        </activity>
+        <activity
+            android:name=".timegame.TimeGameFlagCapitalActivity"
+            android:screenOrientation="portrait"
+            android:label="TimeGameFlagCapitalActivity" >
+        </activity>
+        <activity
+            android:name=".timegame.SplashTimeGameCapitalFlag"
+            android:screenOrientation="portrait"
+            android:label="SplashTimeGameCapitalFlag" >
+        </activity>
+        <activity
+            android:name=".timegame.TimeGameCapitalFlagActivity"
+            android:screenOrientation="portrait"
+            android:label="TimeGameCapitalFlagActivity" >
+        </activity>
+    </application>
+
+</manifest>

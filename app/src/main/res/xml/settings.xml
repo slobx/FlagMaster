@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Sound settings" >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefSoundOnOff"
+            android:summary="Sound is on"
+            android:title="Sound On/Off" >
+        </CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefVibrateOnOff"
+            android:summary="Vibration is on"
+            android:title="Vibration On/Off" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Additional flags" >
+
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="unrecognizedTurnOnOff"
+            android:summary="Unrecognized countries are enabled in the game"
+            android:title="Unrecognized countries" >
+        </CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="othersTurnOnOff"
+            android:summary="Other territories are enabled in the game"
+            android:title="Other territories" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

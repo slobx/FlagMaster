@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:stretchColumns="0"
+    android:shrinkColumns="*"
+    android:background="@drawable/achievementsbackground1">
+    <TableRow>
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/flagImg"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.30"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/countryName"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="left"
+            android:layout_weight="0.70"/>
+
+
+ </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/progresBarTextView"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            />
+
+        <ProgressBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progress="1"
+            android:max="100"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.70"
+            android:id="@+id/progresBar"/>
+
+
+
+    </TableRow>
+
+</TableLayout>

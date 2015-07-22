@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <ImageView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/dialog"
+     android:id="@+id/dialogBackgroundImageView"
+
+ />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialogyes"
+        android:gravity="center"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="265dp"
+        android:id="@+id/dialogYes"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialogno"
+        android:gravity="center"
+        android:layout_alignRight="@+id/dialogBackgroundImageView"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="265dp"
+        android:id="@+id/dialogNo"
+        />
+
+
+</RelativeLayout>

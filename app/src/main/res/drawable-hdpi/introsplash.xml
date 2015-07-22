@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/introanim"
+    android:oneshot="true"
+    >
+    <item android:drawable="@drawable/three1" android:duration="100" />
+    <item android:drawable="@drawable/three2" android:duration="100" />
+    <item android:drawable="@drawable/three3" android:duration="100" />
+    <item android:drawable="@drawable/three4" android:duration="100" />
+    <item android:drawable="@drawable/two1" android:duration="100" />
+    <item android:drawable="@drawable/two2" android:duration="100" />
+    <item android:drawable="@drawable/two3" android:duration="100" />
+    <item android:drawable="@drawable/two4" android:duration="100" />
+    <item android:drawable="@drawable/one1" android:duration="100" />
+    <item android:drawable="@drawable/one2" android:duration="100" />
+    <item android:drawable="@drawable/one3" android:duration="100" />
+    <item android:drawable="@drawable/one4" android:duration="100" />
+    <item android:drawable="@drawable/go1" android:duration="100" />
+    <item android:drawable="@drawable/go2" android:duration="100" />
+    <item android:drawable="@drawable/go3" android:duration="100" />
+   <item android:drawable="@drawable/go4" android:duration="100" />
+</animation-list> 
